@@ -121,7 +121,6 @@ celerybeat.pid
 
 # Environments
 .idea
-.vscode
 .env
 .venv
 env/
@@ -162,12 +161,58 @@ cython_debug/
 #.idea/
 
 # Custom
-/auto_bangumi/conf/const_dev.py
-/config/bangumi.json
-/auto_bangumi/tester.py
-/resource/names.txt
+#
+# backend
+/backend/src/test.py
+
+/backend/src/module/run_debug.sh
+/backend/src/module/debug_run.sh
+/backend/src/module/__version__.py
+/backend/src/data/
+
+/src/module/conf/config_dev.ini
 
 
+.run
+/backend/src/templates/
+/backend/src/config/
+/src/debuger.py
+/backend/src/dist.zip
+/pyrightconfig.json
 
-/auto_bangumi/parser/analyser/tmdb.py
+# webui
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
+node_modules
+dist
+webui/.vite/deps/*
+dist.zip
+dist-ssr
+*.local
+dev-dist
+
+# Editor directories and files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# vitepress
+/docs/.vitepress/cache/
+
+
+# test file
+test.*
